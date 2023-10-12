@@ -9,7 +9,7 @@
 
 def minOperations(n):
     if n == 1:
-        return (n)
+        return (0)
 
     operations = 0
     copied = 0
@@ -21,7 +21,6 @@ def minOperations(n):
             we copy all and pate multiple times"""
             copied = current_H
         """perform copy and paste operations"""
-        operations += 1
         current_H += copied
-
+        operations += 1
     return (operations)
